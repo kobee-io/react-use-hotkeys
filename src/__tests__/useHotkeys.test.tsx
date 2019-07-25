@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { cleanup, render } from 'react-testing-library';
-import useHotkeys from '../index';
+import useHotkeys from '../useHotkeys';
 
 import fireKeydownEvent from './helpers/fireKeydownEvent';
 
