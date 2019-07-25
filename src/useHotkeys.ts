@@ -1,4 +1,5 @@
-import { useEffect, useContext, useMemo } from 'react';
+import { useContext, useEffect, useMemo } from 'react';
+import { HotkeysContext } from './context'
 import arraysAreEqual from './helpers/arraysAreEqual';
 import getActiveModifierKeys from './helpers/getActiveModifierKeys';
 import getHotkeysArray from './helpers/getHotkeysArray';
@@ -7,7 +8,6 @@ import mapModifierKeys from './helpers/mapModifierKeys';
 import modifierKeyPressed from './helpers/modifierKeyPressed';
 import tail from './helpers/tail';
 import takeUntilLast from './helpers/takeUntilLast';
-import { HotkeysContext } from './context'
 
 import 'shim-keyboard-event-key';
 

@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { cleanup, render } from 'react-testing-library'
+import { HotkeysProvider } from '../context'
 import useHotkeys from '../useHotkeys'
 import useScope from '../useScope'
-import { HotkeysProvider } from '../context'
 
 import fireKeydownEvent from './helpers/fireKeydownEvent'
 

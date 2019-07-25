@@ -2,7 +2,7 @@ import * as React from 'react'
 
 export const HotkeysContext = React.createContext<any>({})
 
-type HotkeysProviderProps = {
+interface HotkeysProviderProps {
   defaultScope: string[]
 }
 

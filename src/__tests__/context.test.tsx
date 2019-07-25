@@ -1,8 +1,8 @@
 import * as React from 'react'
-import { cleanup, render, getByText } from 'react-testing-library'
+import { cleanup, getByText, render } from 'react-testing-library'
+import { HotkeysConsumer, HotkeysContext, HotkeysProvider } from '../context'
 import useHotkeys from '../useHotkeys'
 import useScope from '../useScope'
-import { HotkeysProvider, HotkeysConsumer, HotkeysContext } from '../context'
 
 const setup = (
   defaultScope: string[] = [],
@@ -11,8 +11,8 @@ const setup = (
 ) => {
   class Consumer extends React.Component {
     componentDidMount () {
-      scopesToAdd && this.context.addScopes(scopesToAdd)
-      scopesToRemove && this.context.removeScopes(scopesToRemove)
+      if (scopesToAdd) { this.context.addScopes(scopesToAdd) }
+      if (scopesToRemove) { this.context.removeScopes(scopesToRemove) }
     }
 
     render () {
