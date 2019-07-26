@@ -1,9 +1,5 @@
-import useHotkeys from './useHotkeys'
+import useHotkeys from './useHotkeys';
 
-export { default as useHotkeysScope } from './useScope'
-export {
-  HotkeysContext,
-  HotkeysProvider,
-  HotkeysConsumer
-} from './context'
-export default useHotkeys
+export { default as useHotkeysScope } from './useScope';
+export { HotkeysContext, HotkeysProvider, HotkeysConsumer } from './context';
+export default useHotkeys;

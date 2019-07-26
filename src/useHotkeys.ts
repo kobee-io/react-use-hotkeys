@@ -1,5 +1,5 @@
 import { useContext, useEffect, useMemo } from 'react';
-import { HotkeysContext } from './context'
+import { HotkeysContext } from './context';
 import arraysAreEqual from './helpers/arraysAreEqual';
 import getActiveModifierKeys from './helpers/getActiveModifierKeys';
 import getHotkeysArray from './helpers/getHotkeysArray';
@@ -20,8 +20,8 @@ const useHotkeys = (
   scopes: string[]
 ) => {
   const hotkeysArray = useMemo(() => getHotkeysArray(hotkeys), [hotkeys]);
-  const context = useContext(HotkeysContext)
-  const activeScope = context ? context.activeScope : null
+  const context = useContext(HotkeysContext);
+  const activeScope = context ? context.activeScope : null;
 
   useEffect(() => {
     let keySequence: string[] = [];
@@ -63,11 +63,10 @@ const useHotkeys = (
 
     const onKeydown = (event: KeyboardEvent) => {
       if (activeScope && scopes && !scopes.includes(activeScope)) {
-        return
+        return;
       }
 
-      if (hotkeysArray.length === 1 &&
-          hotkeysArray[0] === ESCAPE_HATCH_KEY) {
+      if (hotkeysArray.length === 1 && hotkeysArray[0] === ESCAPE_HATCH_KEY) {
         /**
          * Provide escape hatch should the user want to perform
          * some custom logic not supported by the API.
