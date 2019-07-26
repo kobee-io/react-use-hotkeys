@@ -1,5 +1,5 @@
 {
-  "name": "@reecelucas/react-use-hotkeys",
+  "name": "react-use-hotkeys",
   "version": "1.1.2",
   "description": "React hook to create keyboard shortcuts",
   "main": "lib/index.js",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reecelucas/react-use-hotkeys.git"
+    "url": "git+https://github.com/kobee-io/react-use-hotkeys.git"
   },
   "keywords": [
     "react",
@@ -38,9 +38,9 @@
   "author": "Reece Lucas <reecelucas@sky.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/reecelucas/react-use-hotkeys/issues"
+    "url": "https://github.com/kobee-io/react-use-hotkeys/issues"
   },
-  "homepage": "https://github.com/reecelucas/react-use-hotkeys#readme",
+  "homepage": "https://github.com/kobee-io/react-use-hotkeys#readme",
   "peerDependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
