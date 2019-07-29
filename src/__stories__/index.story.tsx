@@ -1,7 +1,7 @@
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
-import useHotkeys from '../index';
+import useHotkeys from '../useHotkeys';
 import usePrevious from './utils/hooks/usePrevious';
 
 const Basic = ({ hotkey }: { hotkey: string }) => {
